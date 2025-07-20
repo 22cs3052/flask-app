@@ -8,7 +8,8 @@ from datetime import datetime
 import logging
 from model import HousePricePredictor
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='.')
+
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
